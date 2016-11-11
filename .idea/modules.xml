@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JniDemo.iml" filepath="$PROJECT_DIR$/JniDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidmkbuild/androidmkbuild.iml" filepath="$PROJECT_DIR$/androidmkbuild/androidmkbuild.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidmkdemo/androidmkdemo.iml" filepath="$PROJECT_DIR$/androidmkdemo/androidmkdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cmakebuild/cmakebuild.iml" filepath="$PROJECT_DIR$/cmakebuild/cmakebuild.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cmakedemo/cmakedemo.iml" filepath="$PROJECT_DIR$/cmakedemo/cmakedemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javabuild/javabuild.iml" filepath="$PROJECT_DIR$/javabuild/javabuild.iml" />
+    </modules>
+  </component>
+</project>

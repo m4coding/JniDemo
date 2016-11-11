@@ -1,0 +1,1 @@
+include ':androidmkbuild', ':cmakebuild', ':javabuild', ':cmakedemo', ':androidmkdemo'
