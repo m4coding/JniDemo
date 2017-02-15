@@ -34,6 +34,10 @@
 	System.loadLibrary ("TestJNI"); //加载Windows下的TestJNI.dll本地库
 	System.loadLibrary ("TestJNI"); //加载Linux下的libTestJNI.so本地库
 	注意：TestJNI.dll 或 libTestJNI.so 必须是在JVM属性java.library.path所指向的路径中。
+	Android系统中，java.library.path指向的路径，默认是
+	（1）/vendor/lib  
+	（2）/system/lib 
+	（3）/data/app-lib/应用的包名
 
 
 #### 静态注册jni时，需要注意点  #####
