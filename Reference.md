@@ -61,3 +61,25 @@
 
 （1）开发过程中，发现会偶尔出现修改C++代码后而so不进行重新编译的情况，导致修改后的C++代码不能实时运行，
 点击android studio的选项Build->Refresh Linked C++ Projects刷新一下即可
+
+#### android studio工程，使用Gradle改变so的引用位置
+
+在Android Studio工程中，默认的so存放位置是在jniLibs中
+![](http://i.imgur.com/UEelyU3.png)
+
+而armeabi、armeabi-v7a等目录是对应于cpu架构的。
+
+- 通过修改gradle的sourceSets属性，改变加载路径：
+- 
+		android {
+			sourceSets.main {
+		        java.srcDir "src"  //java.srcDir是以模块的目录为标准的，下面也是类似的
+		        res.srcDir "res"
+		        jniLibs.srcDir "libs"
+		        manifest.srcFile "AndroidManifest.xml"
+		        assets.srcDir "assets"
+	    	}
+		}
+		
+
+参考：[http://www.android-studio.org/index.php/docs/guide/135-gradle-2](http://www.android-studio.org/index.php/docs/guide/135-gradle-2)
